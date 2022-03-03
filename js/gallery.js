@@ -212,3 +212,5 @@ function cart_buy(id) {
 
 
 
+console.log('hello');
+
