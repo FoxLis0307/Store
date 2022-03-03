@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+  <form id="main-form" method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="name" placeholder="Name" id="name"><br><br>
+    <label for="pass">Password</label>
+    <input type="password" name="pass" placeholder="Password" id="pass"> <br><br>
+    <label for="repass">Check pass</label>
+    <input type="password" name="repass" placeholder="CheckPass" id="repass"> <br><br>
+    <span>Pol:</span>
+    <input type="radio" name="state" id="male" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" name="state" id="female" value="Female">
+    <label for="female">Female</label><br><br>
+    <div id="error" style="color: red"></div> <br>
+    <input type="submit" name="submit" value="Ready">
+  </form>
+
+<!--  <button name="mainButton" onclick="onClickButton(this)">Push on me</button>-->
+
+<!--  <input oninput="onMouseOver(this)">-->
+  <script>
+    //document.write("JS SAD HELLO");
+    //console.info("JS");
+    //console.log("Js");
+    //console.error("JS Hello");
+   /* var num=12;
+    if (num == 2 && true) {
+      console.log("Ok")
+    } else if(num==12) {
+      console.log("Else if")
+    }
+    var stroka = "word";
+    switch (stroka) {
+      case "4":
+        console.log("Peremen 4");
+        break;
+      case "45":
+        console.log("Peremen 45");
+        break;
+      case "word":
+        console.log("Peremen word");
+        break;
+      default:
+        console.log("Default");
+    }
+    var arr = [5, true, "stroka"];
+    console.log(arr);
+    var matrix = [[4, 6, 8], [2, 4, 8], [10, 3, 5]];
+    matrix[0][2] = 10;
+    console.log(matrix)
+    for(var i = 100; i > 5; i /= 2) {
+      console.log(i);
+    }
+    var j=0;
+    while(j<10) {
+      console.log(j);
+      j++;
+    }
+    var x = 100;
+    do {
+      console.log(x);
+    } while(x < 50);
+    alert("Good Weather!");
+    var data = confirm("Do you in house?");
+    if(data) {
+      console.log("nice")
+    }
+    var data1 = prompt("Say how old are you?");
+    console.log(data1)
+
+    var person = null;
+    if(confirm("Are you ready?")) {
+      person = prompt("Name");
+      alert("Hello, " + person);
+    } else {
+      alert("You say cansel");
+    }
+
+    function info() {
+
+    }
+
+    */
+    // var counter = 0;
+    //
+    // function onClickButton(el) {
+    //   counter++;
+    //   el.innerHTML = "You push on button" + counter;
+    //   // el.style.background = "red";
+    //   // el.style.color = "white";
+    //
+    //   el.style.cssText="border-radius: 5px; border: 0; font-size: 20px"
+    // }
+    //
+    // function onMouseOver(el) {
+    //   if(el.value == "hello")
+    //     alert("Hello")
+    //   console.log(el.value)
+    // }
+
+    // var text = document.getElementById("text");
+    // text.title="New text";
+    // console.log(text.title);
+    // // text.style.backgroundColor = "red";
+    // text.innerHTML = "New<br>string";
+    //
+    // //document.getElementById("text").style.color = "blue";
+    //
+    // // var spans = document.getElementsByTagName("span")
+    // var spans = document.getElementsByClassName("simple-text")
+    //
+    //
+    // for(var i = 0; i < spans.length; i++) {
+    //   console.log(spans[i].innerHTML);
+    // }
+    // document.getElementById("main-form").addEventListener("submit", checkForm);
+    // function checkForm(event) {
+    //   event.preventDefault();
+    //   var el = document.getElementById("main-form")
+    //   var name = el.name.value;
+    //   var pass = el.pass.value;
+    //   var repass = el.repass.value;
+    //   var state = el.state.value;
+    //   console.log(state + " - " + pass + " - " + repass)
+    //   var fail = "";
+    //   if(name == "" || pass == "" || state == "")
+    //     fail="input all";
+    //   else if(name.length <= 1 || name.length > 50)
+    //     fail = "Input norm name";
+    //   else if(pass != repass)
+    //     fail = "passwords not true";
+    //   else if(pass.split("&").length > 1)
+    //     fail = "Not correct pass";
+    //
+    //   if(fail != "") {
+    //     document.getElementById("error").innerHTML = fail;
+    //     return false;
+    //   } else {
+    //     alert("All data input");
+    //     window.location = "https://yandex.ru/search/?from=chromesearch&clid=2242348&text=%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%D1%87%D0%B8%D0%BA&lr=4";
+    //     return false;
+    //
+    //   }
+    // }
+    // let id = setInterval(my_func, 1000);
+    //
+    //
+    // let counter = 0;
+    // function my_func() {
+    //   counter++;
+    //   console.log("Counter" + counter);
+    //   if (counter == 3)
+    //     clearInterval(id);
+    // }
+    // setInterval(function() {
+    //   counter++;
+    //   console.log("Counter: " + counter)
+    // }, 1000);
+  // setTimeout(function() {
+  //   console.log("tIMER is working")
+  // },2000);
+
+  // let date = new Date();
+
+  // console.log(date.getFullYear());
+  // console.log(date.getMonth()+1);
+  //   setInterval(function (){
+  //     console.log("Время " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds());
+  //   },1000);
+  //   let arr = [8, 90, 5, 7, 0, 8, 9];
+  //   let stroka = arr.reverse().join(", ");
+  //   console.log(stroka.split(", "));
+    class Person {
+      constructor(name, age, happiness) {
+        this.name = name;
+        this.age = age;
+        this.happiness = happiness;
+      }
+      info() {
+        console.log("Human: " + this.name + ". age: " + this.age);
+      }
+    }
+
+    let alex = new Person('Alex', 45, true);
+    alex.info();
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+div b, div i{
+  color:green;
+}
+
+p.text:not(:empty){
+  color:grey;
+}
+
+p:last-of-type{
+  text-decoration: line-through;
+}
+
+p.text:empty::after{
+  content: attr(title);
+}
+
+#some_id::before{
+  content: "123";
+}
+
+p.main_link::first-line{
+  color:green;
+}
+
+.main_link{
+  color:red;
+  text-decoration: none;
+}
+
+.main_link:hover{
+  color:blue;
+  text-decoration: underline;
+  text-decoration-color: #555555;
+  cursor: pointer;
+}
+
+.main_link:active{
+  text-decoration: line-through;
+}
+
+.main_link:visited{
+  color: #888888;
+}
+
+input{
+  color:blue;
+}
+
+input:focus{
+  color:green;
+}
+
+input:required{
+
+}
+
+body{
+  background-color: moccasin;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#second{
+  height: 2000px;
+}
+
+.main_text{
+  color:black;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: lowercase;
+  word-spacing: 50px;
+  font-family: "JetBrains Mono ExtraBold", cursive;
+  letter-spacing: 10px;
+  line-height: 50px;
+
+
+}
